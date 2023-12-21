@@ -5,7 +5,6 @@ const usersRouter = require("../routes/usersRouter");
 
 const User = require('../models/User');
 
-// Conectar ao banco de dados
 connectDB();
 
 const app = express();

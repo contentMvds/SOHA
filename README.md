@@ -17,9 +17,9 @@ Este guia de instruções do frontend
 
 ### Instalação
 
-- Clone este repositório em sua maquína local utilizando o Git: `git clone https://github.com/
-- Navegar até o diretório do projeto: cd frontend
-- Instalar as dependências: `npm install`
+- Clone este repositório em sua maquína local utilizando o Git: `git clone`
+- Navegar até o diretório do projeto: `cd soha`
+- Instalar as dependências: `npm install ou yarn install`
 
 ##### Docker
 
@@ -49,14 +49,14 @@ Guia de instruções para executar o backend ou em docker ou localmente
 ### Pré-requisitos
 
 - Node.js e npm instalados
-- Mongo Server
+- Mongo Server (se não for usar o docker)
 - Docker e Docker Compose instalados (se desejar usar o Docker)
 - Conexão com a internet (para instalação de pacotes e dependências)
 
 ### Instalação
 
-- Clonar o repositório: git clone https://github.com/seuusuario/api-node-express-mongoose.git
-- Navegar até o diretório do projeto: cd api-node-express-mongoose
+- Clone este repositório em sua maquína local utilizando o Git: `git clone`
+- Navegar até o diretório do projeto: `cd soha`
 - Instalar as dependências: `npm install`
 
 ### Uso
@@ -72,7 +72,7 @@ Guia de instruções para executar o backend ou em docker ou localmente
 
 Se você optou por usar o Docker:
 
-- utilize o comando `docker-compose up --build`
+- Utilize o comando `docker-compose up --build`
 - A API estará disponível em http://localhost:3000.
 
 #### Teste
@@ -84,8 +84,10 @@ Para rodar os teste unitario deve-se rodar o comando `npm run test`
 A API possui os seguintes endpoints:
 
 ```http
-POST /login: Acesso a aplicação
-POST /register: Criar novo usuario
+- Acesso a aplicação
+POST /login
+- Criar novo usuario
+POST /register: 
 ```
 
 #### CORS

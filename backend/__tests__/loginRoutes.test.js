@@ -3,7 +3,7 @@ const express = require("express");
 const loginRoutes = require("../routes/loginRoutes");
 const User = require("../models/User");
 
-jest.mock("../models/User"); // Mock do modelo de usuário
+jest.mock("../models/User");
 
 const app = express();
 app.use(express.json());
@@ -29,7 +29,7 @@ describe("Login Routes", () => {
   });
 
   it("should return an error when invalid credentials are provided", async () => {
-    User.findOne.mockResolvedValue(null); // Mock retornando null para o usuário
+    User.findOne.mockResolvedValue(null); 
 
     const response = await request(app).post("/login").send({
       email: "invalidUser",
