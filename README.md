@@ -21,17 +21,19 @@ Este guia de instruções do frontend
 - Navegar até o diretório do projeto: `cd soha`
 - Instalar as dependências: `npm install ou yarn install`
 
-##### Docker
-
-Se você optou por usar o Docker:
-
-- Utilize o comando `docker-compose up --build`
-- A API estará disponível em http://localhost:8080.
+### Uso
 
 #### Execução local
 
 - Para executar a aplicação localmente, utilize o comando `npm run serve`. Isso irá iniciar o servidor na
 - A API estará disponível em http://localhost:8080
+
+#### Docker
+
+Se você optou por usar o Docker:
+
+- Utilize o comando `docker-compose up --build`
+- A API estará disponível em http://localhost:8080.
 <hr/>
 
 ## OBS:
@@ -75,11 +77,11 @@ Se você optou por usar o Docker:
 - Utilize o comando `docker-compose up --build`
 - A API estará disponível em http://localhost:3000.
 
-#### Teste
+### Teste
 
 Para rodar os teste unitario deve-se rodar o comando `npm run test`
 
-#### Endpoints
+### Endpoints
 
 A API possui os seguintes endpoints:
 
@@ -87,10 +89,10 @@ A API possui os seguintes endpoints:
 - Acesso a aplicação
 POST /login
 - Criar novo usuario
-POST /register: 
+POST /register:
 ```
 
-#### CORS
+### CORS
 
 A API utiliza CORS para permitir requisições de diferentes origens. A configuração pode ser encontrada no middleware cors no arquivo app.js.
 
